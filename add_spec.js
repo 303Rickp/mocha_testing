@@ -11,14 +11,14 @@ describe('sending a POST to /api/add', () =>{
     it('adding two numbers together',(done)= >{
       api.post('/api/add')
       .send({
-        num1: 5,
-        num2: 2
+        num1: 2,
+        num2: 3
       })
       .expect(200)
       .end((err,res)=>{
         if(err)return done(err);
 
-        res.body.result.should.be.equal(7);
+        res.body.result.should.be.equal(5);
 
         done();
       });
