@@ -10,9 +10,9 @@ describe('canary-test', ()=>{
     hello.should.be.equal('hello');
   });
 
-it('type of string',()=>{
-  const str = 'string';
+  it('type of string',()=>{
+    const str = 'string';
 
-  str.should.be.a('string');
+    str.should.be.a('String');
   })
 });
