@@ -11,8 +11,8 @@ describe('canary-test', ()=>{
   });
 
 it('type of string',()=>{
-  const str = 'qwfg';
+  const five = '5';
 
-  str.should.be.a('string');
+  str.should.be.a('5');
   })
 });
